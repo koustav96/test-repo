@@ -1,0 +1,9 @@
+# Main theme library.
+global:
+  css:
+    component:
+      css/style.css: {}
+  js:
+    libraries/slick.min.js: {}
+  dependencies:
+    - core/jquery

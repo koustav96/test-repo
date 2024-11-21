@@ -1,0 +1,43 @@
+/* .movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+}
+
+.movie-item {
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover img {
+  transform: scale(1.05);
+}
+
+.movie-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.movie-item:hover .overlay {
+  opacity: 1;
+} */
