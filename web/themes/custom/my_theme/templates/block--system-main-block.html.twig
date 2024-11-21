@@ -1,0 +1,31 @@
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'movie-grid-block',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+    <div class="movie-slider">
+      {% if content is iterable %}
+        {% for item in content %}
+          <div class="movie-item">
+            {{ item }}
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="movie-item">
+          {{ content }}
+        </div>
+      {% endif %}
+    </div>
+  {% endblock %}
+</div>
